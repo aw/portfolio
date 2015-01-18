@@ -1,0 +1,40 @@
+/*
+ * © 2015 Alexander Williams, Unscramble, MIT License
+ * Custom CSS styles
+ */
+
+body { font-size: 14px;}
+li { list-style-type: none; border-bottom: 4px dotted #DDD; margin-bottom: 10px;}
+h3 { margin: 0; font-size: 1.7em;}
+header { z-index: 102; position: absolute; top: 12px; text-align: center; width: 100%}
+footer { z-index: 103; position: absolute; bottom: 0; text-align: center; width: 100%;}
+
+pre.fav_snippet { border: 1px solid #E6E6E6; padding: 0 !important; border-radius: 4px 4px 0 0; margin: 0;}
+pre.fav_snippet code {
+  overflow-x: auto;
+  word-break: normal;
+  font-family:monospace;
+  font-size:14px;
+  width: 100%;
+}
+p.review,
+p.fav_review {
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #505050;
+}
+p.fav_review {
+  border: 1px solid #E6E6E6;
+  border-radius: 0 0 4px 4px;
+  background-color: #FBFBFB;
+  padding: 1em;
+  line-height: inherit;
+  border-top: 0;
+}
+span.fav_snippet_url { font-size: 0.8em; font-style: italic;}
+a.githubuser { font-size: 22px; color: #666;}
+
+.hljs { padding: 1em;}
+.label { font-size: 100%; font-weight: normal; vertical-align: bottom;}
+.label-language { background-color: #F321AE;}

@@ -1,0 +1,20 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title": "{{post.title}}",
+      "repo": "{{post.repo}}",
+      "description": "{{post.description}}",
+      "pullurl": "{{post.pullurl}}",
+      "status": "{{post.status}}",
+      "language": "{{post.language}}",
+      "review": {{ post.review | jsonify }},
+      "fav_snippet": {{ post.fav_snippet | jsonify }},
+      "fav_snippet_url": {{ post.fav_snippet_url }},
+      "fav_review": {{ post.fav_review | jsonify }},
+      "tags": "{{ post.tags | array_to_sentence_string }}"
+    }
+  {% if forloop.rindex0 > 0 %},
+  {% endif %}{% endfor %}
+]

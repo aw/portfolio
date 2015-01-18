@@ -1,0 +1,71 @@
+/*
+ * © 2015 Alexander Williams, Unscramble, MIT License
+ * Bespoke.js theme
+ * Classic Theme
+ */
+
+/*.bespoke-parent { overflow: inherit; overflow-x: hidden;}*/
+section.bespoke-slide {
+	background: none repeat scroll 0% 0% #FFF !important;
+	border-radius: 30px;
+	border: 1px solid #EEE;
+	width: 840px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -420px;
+	margin-top: 60px;
+	padding: 20px 40px 0 0;
+	text-align: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	-webkit-align-items: inherit;
+	-webkit-justify-content: inherit;
+}
+section.bespoke-before {
+	-webkit-transform: translate3d(-2640px, 0, 0);
+	-moz-transform: translate3d(-2640px, 0, 0);
+	-ms-transform: translate3d(-2640px, 0, 0);
+	-o-transform: translate3d(-2640px, 0, 0);
+	transform: translate3d(-2640px, 0, 0);
+}
+section.bespoke-before-2 {
+	-webkit-transform: translate3d(-1760px, 0, 0);
+	-moz-transform: translate3d(-1760px, 0, 0);
+	-ms-transform: translate3d(-1760px, 0, 0);
+	-o-transform: translate3d(-1760px, 0, 0);
+	transform: translate3d(-1760px, 0, 0);
+	opacity: 0.1;
+}
+section.bespoke-before-1 {
+	-webkit-transform: translate3d(-880px, 0, 0);
+	-moz-transform: translate3d(-880px, 0, 0);
+	-ms-transform: translate3d(-880px, 0, 0);
+	-o-transform: translate3d(-880px, 0, 0);
+	transform: translate3d(-880px, 0, 0);
+	opacity: 0.3;
+}
+section.bespoke-after {
+	-webkit-transform: translate3d(2640px, 0, 0);
+	-moz-transform: translate3d(2640px, 0, 0);
+	-ms-transform: translate3d(2640px, 0, 0);
+	-o-transform: translate3d(2640px, 0, 0);
+	transform: translate3d(2640px, 0, 0);
+}
+section.bespoke-after-2 {
+	-webkit-transform: translate3d(1760px, 0, 0);
+	-moz-transform: translate3d(1760px, 0, 0);
+	-ms-transform: translate3d(1760px, 0, 0);
+	-o-transform: translate3d(1760px, 0, 0);
+	transform: translate3d(1760px, 0, 0);
+	opacity: 0.1;
+}
+section.bespoke-after-1 {
+	-webkit-transform: translate3d(880px, 0, 0);
+	-moz-transform: translate3d(880px, 0, 0);
+	-ms-transform: translate3d(880px, 0, 0);
+	-o-transform: translate3d(880px, 0, 0);
+	transform: translate3d(880px, 0, 0);
+	opacity: 0.3;
+}
