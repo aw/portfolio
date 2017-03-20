@@ -36,5 +36,5 @@ span.fav_snippet_url { font-size: 0.8em; font-style: italic;}
 a.githubuser { font-size: 22px; color: #666;}
 
 .hljs { padding: 1em;}
-.label { font-size: 100%; font-weight: normal; vertical-align: bottom;}
+.label { font-size: 100%; font-weight: normal; vertical-align: bottom; margin-left:1em;}
 .label-language { background-color: #F321AE;}

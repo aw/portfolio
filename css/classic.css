@@ -9,14 +9,14 @@ section.bespoke-slide {
 	background: none repeat scroll 0% 0% #FFF !important;
 	border-radius: 30px;
 	border: 1px solid #EEE;
-	width: 840px;
 	height: auto;
 	position: absolute;
 	top: 0;
 	left: 50%;
 	margin-left: -420px;
 	margin-top: 60px;
-	padding: 20px 40px 0 0;
+	padding: 40px;
+	width: 840px;
 	text-align: inherit;
 	justify-content: inherit;
 	align-items: inherit;

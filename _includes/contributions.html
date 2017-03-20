@@ -4,7 +4,7 @@
 
       <!-- Status and title -->
       <div class="row">
-        <div class="col-xs-2 col-md-2 text-right">
+        <div class="col-xs-3 col-md-3 text-right">
           <p class="status">
             {% case post.status %}
               {% when 'merged' %}
@@ -23,38 +23,34 @@
             <span class="label label-{{ label }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.status }}</span>
           </p>
         </div>
-        <div class="col-xs-10 col-md-10">
+        <div class="col-xs-9 col-md-9 text-left">
           <h3 class="title"><a href="{{ post.pullurl }}" title="{{ post.repo }}" target="_blank">{{ post.title }}</a></h3>
           <p><span class="text-success">{{ post.repo }}</span> - {{ post.description }}</p>
         </div>
-      </div>
 
       <!-- Personal review -->
-      <div class="row">
-        <div class="col-xs-2 col-md-2 text-right"><i class="twa twa-bookmark-tabs twa-2x"></i></div>
-        <div class="col-xs-10 col-md-10">
+        <div class="col-xs-3 col-md-3 text-right"><i class="twa twa-bookmark-tabs twa-2x"></i></div>
+        <div class="col-xs-9 col-md-9 text-left">
           <p class="review">{{ post.review }}</p>
         </div>
-      </div>
 
       <!-- Favourite snippet -->
-      <div class="row">
         {% if post.fav_snippet %}
-          <div class="col-xs-2 col-md-2 text-right"><i class="twa twa-star twa-2x" data-toggle="tooltip" data-placement="left" title="fav snippet"></i></div>
-          <div class="col-xs-10 col-md-10" id="post_{{ forloop.index }}"><pre class="fav_snippet"><code class="language-{{ post.language }}">{{ post.fav_snippet }}</code></pre>
+          <div class="col-xs-3 col-md-3 text-right"><i class="twa twa-star twa-2x" data-toggle="tooltip" data-placement="left" title="fav snippet"></i></div>
+          <div class="col-xs-9 col-md-9 text-left" id="post_{{ forloop.index }}"><p><pre class="fav_snippet"><code class="language-{{ post.language }}">{{ post.fav_snippet }}</code></pre></p>
             <p class="fav_review">{{ post.fav_review }}<span class="fav_snippet_url">source: <a href="{{ post.fav_snippet_url }}" target="_blank">{{ post.fav_snippet_url }}</a></span></p>
           </div>
         {% endif %}
-      </div>
 
       <!-- Languages and tags -->
-      <div class="row">
-        <p class="tags text-right col-xs-12 col-md-12 pull-right">
-          {% for tag in post.tags %}
-            <span class="label label-default">{{ tag }}</span>
-          {% endfor %}
-          <span class="label label-language">{{ post.language }}</span>
-        </p>
+        <div class="col-xs-12 col-md-12">
+          <p class="tags">
+            {% for tag in post.tags %}
+              <span class="label label-default pull-right">{{ tag }}</span>
+            {% endfor %}
+            <span class="label label-language pull-right">{{ post.language }}</span>
+          </p>
+        </div>
       </div>
 
     </section>
