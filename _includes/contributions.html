@@ -4,7 +4,7 @@
 
       <!-- Status and title -->
       <div class="row">
-        <div class="col-xs-3 col-md-3 text-right">
+        <div class="col-xs-2 col-md-2 text-right">
           <p class="status">
             {% case post.status %}
               {% when 'merged' %}
@@ -23,7 +23,7 @@
             <span class="label label-{{ label }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.status }}</span>
           </p>
         </div>
-        <div class="col-xs-9 col-md-9 text-left">
+        <div class="col-xs-10 col-md-10 text-left">
           <h3 class="title"><a href="{{ post.pullurl }}" title="{{ post.repo }}" target="_blank">{{ post.title }}</a></h3>
           <p><span class="text-success">{{ post.repo }}</span> - {{ post.description }}</p>
         </div>
