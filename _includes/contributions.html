@@ -20,6 +20,7 @@
               {% else %}
                 {% assign label = 'default' %}
             {% endcase %}
+            <span>{{ post.date | date: "%b %d, %Y" }}</span><br/>
             <span class="label label-{{ label }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.status }}</span>
           </p>
         </div>
