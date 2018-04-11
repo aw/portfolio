@@ -21,7 +21,7 @@
                 {% assign label = 'default' %}
             {% endcase %}
             <span>{{ post.date | date: "%b %d, %Y" }}</span><br/>
-            <span class="label label-{{ label }}" data-toggle="tooltip" data-placement="bottom" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.status }}</span>
+            <span class="label label-{{ label }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.status }}</span>
           </p>
         </div>
         <div class="col-xs-10 col-md-10 text-left">
@@ -37,7 +37,7 @@
 
       <!-- Favourite snippet -->
         {% if post.fav_snippet %}
-          <div class="col-xs-2 col-md-2 text-right"><i class="twa twa-star twa-2x" data-toggle="tooltip" data-placement="left" title="fav snippet"></i></div>
+          <div class="col-xs-2 col-md-2 text-right"><i class="twa twa-star twa-2x" title="fav snippet"></i></div>
           <div class="col-xs-10 col-md-10 text-left" id="post_{{ forloop.index }}"><p><pre class="fav_snippet"><code class="language-{{ post.language }}">{{ post.fav_snippet }}</code></pre></p>
             <p class="fav_review">{{ post.fav_review }}<span class="fav_snippet_url">source: <a href="{{ post.fav_snippet_url }}" target="_blank">{{ post.fav_snippet_url }}</a></span></p>
           </div>

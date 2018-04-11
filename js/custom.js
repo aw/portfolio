@@ -22,6 +22,5 @@
   }
   arrowListener();
   hljs.initHighlightingOnLoad();
-  $('[data-toggle="tooltip"]').tooltip();
 
 }).call(this);
