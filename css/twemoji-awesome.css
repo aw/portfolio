@@ -68,13 +68,13 @@ SOFTWARE.
   background-size: 5em 5em; }
 
 .twa-bookmark-tabs {
-  background-image: url("https://twemoji.maxcdn.com/svg/1f4d1.svg"); }
+  background-image: url("../twa-bookmark-tabs.svg"); }
 
 .twa-star {
-  background-image: url("https://twemoji.maxcdn.com/svg/2b50.svg"); }
+  background-image: url("../twa-star.svg"); }
 
 .twa-arrow-left {
-  background-image: url("https://twemoji.maxcdn.com/svg/2b05.svg"); }
+  background-image: url("../twa-arrow-left.svg"); }
 
 .twa-arrow-right {
-  background-image: url("https://twemoji.maxcdn.com/svg/27a1.svg"); }
+  background-image: url("../twa-arrow-right.svg"); }
